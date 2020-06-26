@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="g-signin2" data-onsuccess="onSignIn"></div>
+        <p>Twitter here!</p>
       </header>
     </div>
   );
