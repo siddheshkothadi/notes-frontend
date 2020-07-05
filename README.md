@@ -1,5 +1,4 @@
-## Notes front-end
-### Front end for notes app
+## Notes front end
 ### Steps to follow:
 
 <ul>
@@ -9,9 +8,11 @@
     ```
     git clone https://github.com/siddheshkothadi/notes-frontend
     ```
+
     ```
     cd notes-frontend
     ```
+
   </li> 
   <li>
     <p>Install the dependencies:</p>
@@ -27,6 +28,7 @@
     ```
     npm start
     ```
+
   </li>
 </ul>
 
