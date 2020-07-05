@@ -8,15 +8,11 @@
     
     ```
     git clone https://github.com/siddheshkothadi/notes-frontend
- 
     ```
-
     ```
     cd notes-frontend
-
     ```
-
-  </li>  
+  </li> 
   <li>
     <p>Install the dependencies:</p>
     
@@ -31,7 +27,6 @@
     ```
     npm start
     ```
-
   </li>
 </ul>
 
