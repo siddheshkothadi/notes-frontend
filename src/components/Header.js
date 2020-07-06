@@ -4,10 +4,9 @@ import './Header.css';
 export default function(props){
     return(
         <div className="Header">
-            <img src={props.picture} alt='User Profile'/>
-            <div className="Dropdown-content">
-                <a href="#">Logout</a>
-            </div>
+            <img src={props.user.picture} alt='User Profile'/>
+            <a href="http://localhost:5000/auth/logout">Logout</a>
+            <a href="http://localhost:5000/auth/google">Login</a>
             <p>Notes</p>
         </div>
     )
