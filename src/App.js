@@ -7,6 +7,7 @@ import './App.css'
 function App() {
   const [isSignedIn,setIsSignedIn] = useState(false)
   const [user,setUser] = useState({})
+  const [isLoading,setIsLoading] = useState(true)
 
   useEffect(()=>{
       fetch("http://localhost:5000/auth/login/success",
@@ -26,10 +27,12 @@ function App() {
       })
       .then(responseJson => {
         setIsSignedIn(true)
+        setIsLoading(false)
         setUser(responseJson.user)
       })
       .catch(err => {
         setIsSignedIn(false)
+        setIsLoading(false)
         throw(err)
       });
     },
@@ -38,7 +41,8 @@ function App() {
     
   const props = {
     user: user,
-    isSignedIn: isSignedIn
+    isSignedIn: isSignedIn,
+    isLoading: isLoading
   }
 
   return (
