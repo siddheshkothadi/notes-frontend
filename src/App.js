@@ -8,7 +8,6 @@ function App() {
   const [isSignedIn,setIsSignedIn] = useState(false)
   const [user,setUser] = useState({})
 
-
   useEffect(()=>{
       fetch("http://localhost:5000/auth/login/success",
       {
@@ -36,10 +35,7 @@ function App() {
     },
     [isSignedIn]
   )
-  
-  // var cont;
-  // isSignedIn ? cont =<h1>hekki</h1> : cont = <a href="http://localhost:5000/auth/google">Login</a>
-  
+    
   const props = {
     user: user,
     isSignedIn: isSignedIn
