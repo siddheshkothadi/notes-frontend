@@ -5,3 +5,8 @@
     justify-content: space-evenly;
     margin-top: 25px;
 }
+
+.Notes-Container img {
+    width: 30px;
+    border-radius: 50%;
+}

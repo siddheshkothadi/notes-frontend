@@ -3,7 +3,6 @@ import Dashboard from "./components/Dashboard"
 import Header from "./components/Header";
 import './App.css'
 
-
 function App() {
   const [isSignedIn,setIsSignedIn] = useState(false)
   const [user,setUser] = useState({})
@@ -36,7 +35,7 @@ function App() {
         throw(err)
       });
     },
-    [isSignedIn]
+    []
   )
     
   const props = {

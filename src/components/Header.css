@@ -8,15 +8,16 @@
     height: 60px;
     border-bottom: 1px #484848 solid;
     background-color: #202124;
+    box-shadow:  1px 2px 2px #353232, 0 1px 1px 1px #121212;
 }
 
-img {
+.Header img {
     width: 30px;
     margin: 10px;
     border-radius: 50%;
 }
 
-img:hover{
+.Header img:hover{
     border-style: inset;
 }
 

@@ -10,6 +10,7 @@
     border-width: 1px;
     border-color: #484848;
     border-radius: 10px;
+    box-shadow:  1px 4px 4px #121212, 0 4px 4px 1px #121212;
 }
 
 .Title {
