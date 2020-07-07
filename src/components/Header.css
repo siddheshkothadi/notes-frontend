@@ -1,16 +1,18 @@
 .Header{
+    position: fixed;
     display: flex;
     flex-flow: row-reverse wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 55px;
+    height: 60px;
     border-bottom: 1px #484848 solid;
+    background-color: #202124;
 }
 
 img {
-    height: 60%;
-    margin-right: 11px;
+    width: 30px;
+    margin: 10px;
     border-radius: 50%;
 }
 
@@ -18,6 +20,7 @@ img:hover{
     border-style: inset;
 }
 
-h2 {
-    color: white;
+.Heading {
+    font-size: x-large;
+    margin-left: 12px;
 }

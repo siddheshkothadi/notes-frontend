@@ -1,0 +1,31 @@
+.Note {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #484848;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.Note-Title {
+    font-size: x-large;
+    width: 96%;
+    padding: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Note-Description {
+    white-space: pre-line; 
+    width: 96%;
+    padding: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -7,7 +7,7 @@ export default function(props){
             <img src={props.user.picture} alt='User Profile'/>
             <a href="http://localhost:5000/auth/logout">Logout</a>
             <a href="http://localhost:5000/auth/google">Login</a>
-            <p>Notes</p>
+            <div className='Heading'>Notes</div>
         </div>
     )
 }

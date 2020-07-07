@@ -1,0 +1,7 @@
+.Notes-Container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
