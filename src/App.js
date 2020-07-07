@@ -3,11 +3,10 @@ import Dashboard from "./components/Dashboard"
 import Header from "./components/Header";
 import './App.css'
 
-
 function App() {
   const [isSignedIn,setIsSignedIn] = useState(false)
   const [user,setUser] = useState({})
-
+  const [isLoading,setIsLoading] = useState(true)
 
   useEffect(()=>{
       fetch("http://localhost:5000/auth/login/success",
@@ -27,22 +26,22 @@ function App() {
       })
       .then(responseJson => {
         setIsSignedIn(true)
+        setIsLoading(false)
         setUser(responseJson.user)
       })
       .catch(err => {
         setIsSignedIn(false)
+        setIsLoading(false)
         throw(err)
       });
     },
-    [isSignedIn]
+    []
   )
-  
-  // var cont;
-  // isSignedIn ? cont =<h1>hekki</h1> : cont = <a href="http://localhost:5000/auth/google">Login</a>
-  
+    
   const props = {
     user: user,
-    isSignedIn: isSignedIn
+    isSignedIn: isSignedIn,
+    isLoading: isLoading
   }
 
   return (
