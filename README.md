@@ -6,7 +6,8 @@
     
    ```
    git clone https://github.com/siddheshkothadi/notes-frontend
-
+   ```
+   ```
    cd notes-frontend
    ```
 
