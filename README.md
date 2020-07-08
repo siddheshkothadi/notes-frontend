@@ -2,16 +2,13 @@
 ### Steps to follow:
 
 <ul>
-  <li>
-    <p>Clone the repository:</p>
+  <li><p>Clone the repository:</p>
     
-    ```
-    git clone https://github.com/siddheshkothadi/notes-frontend
-    ```
+   ```
+   git clone https://github.com/siddheshkothadi/notes-frontend
 
-    ```
-    cd notes-frontend
-    ```
+   cd notes-frontend
+   ```
 
   </li> 
   <li>
