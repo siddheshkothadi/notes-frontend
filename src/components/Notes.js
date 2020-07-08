@@ -36,7 +36,7 @@ export default function Notes(props){
     )
     return fetchingNotes ? (
         <div className='Notes-Container'>
-            <img src='loading.svg'/>
+            <img src='loading.svg' alt='Loading'/>
         </div>
     ) :
     (
