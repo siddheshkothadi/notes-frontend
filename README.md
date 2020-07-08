@@ -12,20 +12,18 @@
    ```
 
   </li> 
-  <li>
-    <p>Install the dependencies:</p>
+  <li><p>Install the dependencies:</p>
     
-    ```
-    npm install
-    ```
+   ```
+   npm install
+   ```
 
   </li>
-  <li>
-    <p>After all the dependencies are installed, start the website on localhost:3000 by running:</p>
+  <li><p>After all the dependencies are installed, start the website on localhost:3000 by running:</p>
     
-    ```
-    npm start
-    ```
+   ```
+   npm start
+   ```
 
   </li>
 </ul>
