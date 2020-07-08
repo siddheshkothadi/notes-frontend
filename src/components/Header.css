@@ -9,19 +9,51 @@
     border-bottom: 1px #484848 solid;
     background-color: #202124;
     box-shadow:  1px 2px 2px #353232, 0 1px 1px 1px #121212;
+    z-index: 1;
 }
 
-.Header img {
+.UserImage {
     width: 30px;
     margin: 10px;
     border-radius: 50%;
 }
 
-.Header img:hover{
-    border-style: inset;
-}
-
 .Heading {
     font-size: x-large;
     margin-left: 12px;
+}
+
+.Dropdown {
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 1;
+    justify-self: flex-start;
+}
+
+.DropdownContent {
+    display: none;
+    position: fixed;
+    margin-top: 45px;
+    background-color: #202124;
+    align-self: flex-end;
+    width: auto;
+}
+
+.DropdownContent a{
+    padding: 10px;
+    font-size: medium;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #484848;
+    border-radius: 50px;
+    color: #e8eaed;
+    text-decoration: none;
+}
+
+.Dropdown:hover .DropdownContent{
+    display: inline-flex;
+}
+
+.Dropdown:hover .UserImage{
+    border-style: solid;
 }
