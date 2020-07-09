@@ -5,3 +5,37 @@
     justify-content: flex-start;
     padding-top: 75px;
 }
+
+.LoadingDashboard {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.LoadingDashboard img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.NotSignedInDashboard {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.NotSignedInDashboard a {
+    padding: 20px;
+    border: solid #484848 4px;
+    font-size: x-large;
+    text-decoration: none;
+    color: #e8eaed;
+    border-radius: 30px;
+}
+
+.NotSignedInDashboard a:hover {
+    font-size: xx-large;
+}

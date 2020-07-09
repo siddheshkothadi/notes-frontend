@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import './Notes.css'
 import Note from './Note'
 // import '../../public/loading.svg'
@@ -6,24 +6,27 @@ import Note from './Note'
 export default function Notes(props){
     const [notes,setNotes] = useState([]);
     const [fetchingNotes, setFetchingNotes] = useState(true)
-    const url = 'http://localhost:5000/notes/'+props.user.googleId;
+    var url = 'http://localhost:5000/notes/'+props.user.googleId;
     useEffect(()=>{
         fetch(url,
         {
             method: "GET",
             headers: {
               Accept: "application/json",
-              "Content-Type": "application/json"
-            }
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin":true
+            },
+            mode: 'cors'
         })
         .then(response => {
             console.log("request received")
             if (response.status === 200){
-                return response.json();
+                return response.json()
             }
             throw new Error("failed to load notes");
           })
           .then(responseJson => {
+            console.log(responseJson, url)
             setNotes(responseJson)
             setFetchingNotes(false)
           })
@@ -32,7 +35,7 @@ export default function Notes(props){
             throw(err)
           });
         },
-        [url]
+        [props.user.googleId]
     )
     return fetchingNotes ? (
         <div className='Notes-Container'>
@@ -41,8 +44,9 @@ export default function Notes(props){
     ) :
     (
         <div className='Notes-Container'>
+            {console.log('here')}
             {notes.map((note,i)=>
-                <Note key={i} {...note}/>
+                <Note key={i} {...note} />
             )}
         </div>
     )
