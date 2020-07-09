@@ -4,7 +4,6 @@ import './Header.css';
 export default function(props){
     return props.isSignedIn ? (
         <div className="Header">
-            
             <div className='Dropdown'>
                 <img className='UserImage' src={props.user.picture} alt='User'/>
                 <div className='DropdownContent'>
