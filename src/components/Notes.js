@@ -27,7 +27,7 @@ export default function Notes(props){
           })
           .then(responseJson => {
             console.log(responseJson, url)
-            setNotes(responseJson)
+            setNotes(responseJson.reverse())
             setFetchingNotes(false)
           })
           .catch(err => {
