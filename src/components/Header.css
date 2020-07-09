@@ -45,9 +45,11 @@
     border-style: solid;
     border-width: 1px;
     border-color: #484848;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #e8eaed;
     text-decoration: none;
+    box-shadow:  0px 0px 0px #121212, 0 2px 5px 2px #121212;
+    margin-right: 5px;
 }
 
 .Dropdown:hover .DropdownContent{
@@ -55,5 +57,5 @@
 }
 
 .Dropdown:hover .UserImage{
-    border-style: solid;
+    border: solid 2px;
 }

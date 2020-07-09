@@ -6,9 +6,10 @@ import './App.css'
 function App() {
   const [isSignedIn,setIsSignedIn] = useState(false)
   const [user,setUser] = useState({})
-  const [isLoading,setIsLoading] = useState(true)
+  const [isLoading,setIsLoading] = useState(false)
 
   useEffect(()=>{
+    setIsLoading(true)
       fetch("http://localhost:5000/auth/login/success",
       {
         method: "GET",
@@ -16,18 +17,30 @@ function App() {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
-          "Access-Control-Allow-Credentials": true
+          "Access-Control-Allow-Credentials": true,
+          "Access-Control-Allow-Origin":true
         }
       })
       .then(response => {
         console.log("request received")
-        if (response.status === 200) return response.json();
+        if (response.success === false) {
+          return false
+        }
+        else if (response.status === 200) return response.json();
         throw new Error("failed to authenticate user");
       })
       .then(responseJson => {
-        setIsSignedIn(true)
-        setIsLoading(false)
-        setUser(responseJson.user)
+        console.log(responseJson)
+        if(responseJson.success===false){
+          setIsSignedIn(false)
+          setIsLoading(false)
+        }
+        else{
+          setIsSignedIn(true)
+          setIsLoading(false)
+          setUser(responseJson.user)
+        }
+        
       })
       .catch(err => {
         setIsSignedIn(false)
@@ -37,7 +50,8 @@ function App() {
     },
     []
   )
-    
+  
+  
   const props = {
     user: user,
     isSignedIn: isSignedIn,
