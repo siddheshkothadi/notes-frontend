@@ -17,7 +17,7 @@ export default function Dashboard(props){
     )
     else if(props.isSignedIn) return(   
         <div className="Dashboard">
-            <Textbox />
+            <Textbox {...props} />
             <Notes {...props} />
         </div>
     )
