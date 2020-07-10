@@ -25,7 +25,31 @@
 .Note-Description {
     white-space: pre-line; 
     width: 96%;
-    padding: 4px;
+    padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.Note-DeleteSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Note-DeleteSection img {
+    visibility: hidden;
+    padding: 4px;
+    height: 16px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.Note:hover  .Note-DeleteSection img{
+    visibility: visible;
+}
+
+.Note-DeleteSection img:hover {
+    background-color: #484848;
 }
