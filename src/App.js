@@ -10,7 +10,7 @@ function App() {
 
   useEffect(()=>{
     setIsLoading(true)
-      fetch("http://localhost:5000/auth/login/success",
+    fetch("http://localhost:5000/auth/login/success",
       {
         method: "GET",
         credentials: "include",
@@ -36,9 +36,9 @@ function App() {
           setIsLoading(false)
         }
         else{
+          setUser(responseJson.user)
           setIsSignedIn(true)
           setIsLoading(false)
-          setUser(responseJson.user)
         }
         
       })
@@ -47,11 +47,10 @@ function App() {
         setIsLoading(false)
         throw(err)
       });
-    },
-    []
+  }, 
+  []
   )
-  
-  
+
   const props = {
     user: user,
     isSignedIn: isSignedIn,

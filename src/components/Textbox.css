@@ -13,7 +13,7 @@
     box-shadow:  1px 4px 4px #121212, 0 4px 4px 1px #121212;
 }
 
-.Title {
+.Container .Title {
     font-size: x-large;
     width: 80%;
     padding: 5px;
@@ -24,7 +24,7 @@
     outline: none;
 }
 
-.Description {
+.Container .Description {
     font-size: large;
     width: 80%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
