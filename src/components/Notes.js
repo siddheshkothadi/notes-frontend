@@ -1,7 +1,6 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import './Notes.css'
 import Note from './Note'
-// import '../../public/loading.svg'
 
 export default function Notes(props){
     const [notes,setNotes] = useState([]);
@@ -19,14 +18,13 @@ export default function Notes(props){
             mode: 'cors'
         })
         .then(response => {
-            console.log("request received")
+            console.log("notes request received")
             if (response.status === 200){
                 return response.json()
             }
             throw new Error("failed to load notes");
           })
           .then(responseJson => {
-            console.log(responseJson, url)
             setNotes(responseJson.reverse())
             setFetchingNotes(false)
           })
@@ -35,7 +33,7 @@ export default function Notes(props){
             throw(err)
           });
         },
-        [props.user.googleId]
+        [url]
     )
     return fetchingNotes ? (
         <div className='Notes-Container'>
