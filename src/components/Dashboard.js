@@ -11,7 +11,6 @@ export default function Dashboard(props){
     )
     else if (props.isSignedIn===false) return (
         <div className='NotSignedInDashboard'>
-            {/* <div>Please login</div> */}
             <a href='http://localhost:5000/auth/google'>Login</a>            
         </div>
     )
