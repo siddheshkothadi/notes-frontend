@@ -7,6 +7,7 @@ export default function Notes(props){
     const [fetchingNotes, setFetchingNotes] = useState(true)
     var url = 'http://localhost:5000/notes/'+props.user.googleId;
     useEffect(()=>{
+        setFetchingNotes(true)
         fetch(url,
         {
             method: "GET",

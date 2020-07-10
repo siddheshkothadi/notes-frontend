@@ -33,4 +33,7 @@ function submitNote(googleId,title,description){
         .then(()=>{
             window.location.reload()
         })
+        .catch(err => {
+            throw(err)
+        });
 }
