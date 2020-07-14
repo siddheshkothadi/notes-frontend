@@ -43,7 +43,6 @@ export default function Notes(props){
     ) :
     (
         <div className='Notes-Container'>
-            {console.log('here')}
             {notes.map((note,i)=>
                 <Note key={i} {...note} />
             )}
