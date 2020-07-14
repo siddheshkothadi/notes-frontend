@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './Note.css'
 
 export default function Note(props){
+    const [noteTitle, setNoteTitle] = useState(props.title)
+    const [noteDescription, setNoteDescription] = useState(props.description)
     const [isHidden, setIsHidden] = useState(true)
     const [isSaving, setIsSaving] = useState(false)
     const [modalTitle, setModalTitle] = useState(props.title)
@@ -49,6 +51,8 @@ export default function Note(props){
             })
             .then(()=>{
                 // window.location.reload()
+                setNoteTitle(title)
+                setNoteDescription(description)
                 setIsSaving(false)
             })
             .catch(err => {
@@ -60,8 +64,8 @@ export default function Note(props){
     return(
         <div className='Note-Modal'>
             <div className='Note' onClick={()=>setIsHidden(false)}> 
-                <div className='Note-Title'>{props.title}</div>
-                <div className='Note-Description'>{props.description}</div>
+                <div className='Note-Title'>{noteTitle}</div>
+                <div className='Note-Description'>{noteDescription}</div>
                 <div className='Note-DeleteSection'>
                     <img src='edit.png' alt='edit' description='Edit'/>
                     <img src='delete.png' alt='delete' description='Delete' onClick={(e)=>deleteNote(props._id,e)}/>
@@ -77,11 +81,11 @@ export default function Note(props){
                                 <div className='Modal-Save-Text'>All changes saved</div>
                             ) }
                         </div>
-                        <textarea rows='1' className='Modal-Title' placeholder='Title' defaultValue={props.title} onChange={e => {
+                        <textarea rows='1' className='Modal-Title' placeholder='Title' defaultValue={noteTitle} onChange={e => {
                             setModalTitle(e.target.value)
                             updateNote(props._id,modalTitle,modalDescription)
                         }}/>
-                        <textarea rows='8' className='Modal-Description' placeholder='Take a note...' defaultValue={props.description} onChange={e => {
+                        <textarea rows='8' className='Modal-Description' placeholder='Take a note...' defaultValue={noteDescription} onChange={e => {
                             setModalDescription(e.target.value)
                             updateNote(props._id,modalTitle,modalDescription)
                         }}/>
@@ -94,4 +98,3 @@ export default function Note(props){
         </div>
     )
 }
-
