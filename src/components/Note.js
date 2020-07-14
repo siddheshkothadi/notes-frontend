@@ -65,8 +65,8 @@ export default function Note(props){
                 <div className='Note-Title'>{noteTitle}</div>
                 <div className='Note-Description'>{noteDescription}</div>
                 <div className='Note-DeleteSection'>
-                    <img src='edit.png' alt='edit' description='Edit'/>
-                    <img src='delete.png' alt='delete' description='Delete' onClick={(e)=>deleteNote(props._id,e)}/>
+                    <img src={process.env.PUBLIC_URL+'/edit.png'} alt='edit'/>
+                    <img src={process.env.PUBLIC_URL+'/delete.png'} alt='delete' onClick={(e)=>deleteNote(props._id,e)}/>
                 </div>
             </div>
             {!isHidden && (

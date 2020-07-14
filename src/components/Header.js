@@ -17,7 +17,7 @@ export default function(props){
     (
         <div className="Header">
             <div className='Dropdown'>
-            <img className='UserImage' src='account.png' alt='User'/>
+            <img className='UserImage' src={process.env.PUBLIC_URL+'/account.png'} alt='User'/>
                 <div className='DropdownContent'>
                     <a href="http://localhost:5000/auth/google">Login</a>
                 </div>

@@ -6,7 +6,7 @@ import Textbox from "./Textbox";
 export default function Dashboard(props){
     if (props.isLoading) return (
         <div className='LoadingDashboard'>
-            <img src='loading.svg' alt='Loading'/>
+            <img src={process.env.PUBLIC_URL+'/loading.svg'} alt='Loading'/>
         </div>
     )
     else if (props.isSignedIn===false) return (
