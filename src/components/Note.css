@@ -11,6 +11,7 @@
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .Note-Title {
@@ -106,6 +107,7 @@
 }
 
 .Modal-Close {
+    cursor: pointer;
     justify-self: baseline;
     padding: 10px;
     background-color: #202124;
