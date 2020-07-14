@@ -32,3 +32,14 @@
     border: none;
     outline: none;
 }
+
+.Container > .Submit {
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #484848;
+    cursor: pointer;
+}
+
+.Container > .Submit:hover {
+    background-color: darkgoldenrod;
+}

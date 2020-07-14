@@ -50,7 +50,6 @@ export default function Note(props){
                 })
             })
             .then(()=>{
-                // window.location.reload()
                 setNoteTitle(title)
                 setNoteDescription(description)
                 setIsSaving(false)
