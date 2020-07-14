@@ -76,21 +76,20 @@ export default function Note(props){
                             {isSaving ? (
                                 <div className='Modal-Save-Text'>Saving...</div>
                             ) : (
-                                <div className='Modal-Save-Text'>All changes saved</div>
+                                <div className='Modal-Save-Text'>All changes saved ✓</div>
                             ) }
                         </div>
                         <textarea rows='1' className='Modal-Title' placeholder='Title' defaultValue={noteTitle} onChange={e => {
                             setModalTitle(e.target.value)
-                            console.log(modalTitle)
                             updateNote(props._id,e.target.value,modalDescription)
                         }}/>
                         <textarea rows='8' className='Modal-Description' placeholder='Take a note...' defaultValue={noteDescription} onChange={e => {
                             setModalDescription(e.target.value)
-                            console.log(e.target.value)
                             updateNote(props._id,modalTitle,e.target.value)
                         }}/>
-                        <div className='Modal-Close' onClick={()=>setIsHidden(true)}>
-                            <div className='Modal-Close-Text'>Close</div>
+                        <div className='Modal-Close'>
+                            <div className='Modal-Close-Text' onClick={()=>setIsHidden(true)}>Close</div>
+                            <div className='Modal-Delete' onClick={(e)=>deleteNote(props._id,e)}>Delete</div> 
                         </div>
                     </div>
                 </div>

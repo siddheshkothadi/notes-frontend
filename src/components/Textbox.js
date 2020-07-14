@@ -10,7 +10,9 @@ export default function Textbox(props){
             <input className='Title' type='text' placeholder='Title' onChange={e => setTitle(e.target.value)}/>
             <textarea className='Description' type='text' placeholder='Take a note...' onChange={e => setDescription(e.target.value)}/>
             {/* <button className='Submit' onClick={()=>submitNote(props.user.googleId,title,description)}>Add Note</button> */}
-            <div className='Submit' onClick={()=>submitNote(props.user.googleId,title,description)}>Add Note</div>
+            <div className='Submit' onClick={()=>{
+                submitNote(props.user.googleId,title,description)
+            }}>Add Note</div>
         </div>
     )
 }
