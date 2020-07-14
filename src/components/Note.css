@@ -75,6 +75,7 @@
     border: #484848 1px solid;
     border-radius: 10px;
     box-shadow:  1px 4px 4px #121212, 0 4px 4px 1px #121212;
+    animation: show 0.4s;
 }
 
 .Modal-Save-Text {
@@ -107,20 +108,41 @@
 }
 
 .Modal-Close {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* padding: 10px;
+    background-color: #202124;
+    color: #e8eaed;
+    border-radius: 10px; */
+}
+
+.Modal-Close-Text {
     cursor: pointer;
-    justify-self: baseline;
+    font-size: medium;
     padding: 10px;
     background-color: #202124;
     color: #e8eaed;
     border-radius: 10px;
 }
 
-.Modal-Close-Text {
+.Modal-Delete {
+    cursor: pointer;
     font-size: medium;
+    padding: 10px;
+    background-color: #202124;
+    color: #e8eaed;
+    border-radius: 10px;
 }
 
-.Modal-Close:hover {
+.Modal-Close-Text:hover {
     background-color: #484848;
+}
+
+.Modal-Delete:hover {
+    background-color: #7f0000;
 }
 
 .Note:hover  .Note-DeleteSection > img{
@@ -129,4 +151,16 @@
 
 .Note-DeleteSection > img:hover {
     background-color: #484848;
+}
+
+@keyframes show {
+    from {
+        transform: scale(0);
+        opacity: 0;
+        z-index: -1;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 1;
+    }
 }

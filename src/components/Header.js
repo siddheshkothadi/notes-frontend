@@ -7,6 +7,7 @@ export default function(props){
             <div className='Dropdown'>
                 <img className='UserImage' src={props.user.picture} alt='User'/>
                 <div className='DropdownContent'>
+                    <div>{props.user.name}</div>
                     <a href="http://localhost:5000/auth/logout">Logout</a>
                 </div>
             </div>
