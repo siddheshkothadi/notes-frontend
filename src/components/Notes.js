@@ -15,8 +15,8 @@ export default function Notes(props){
               Accept: "application/json",
               "Content-Type": "application/json",
               "Access-Control-Allow-Origin":true
-            },
-            mode: 'cors'
+            }
+            // mode: 'cors'
         })
         .then(response => {
             console.log("notes request received")
