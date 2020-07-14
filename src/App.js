@@ -22,7 +22,7 @@ function App() {
         }
       })
       .then(response => {
-        console.log("request received")
+        console.log("login request received")
         if (response.success === false) {
           return false
         }
@@ -30,7 +30,6 @@ function App() {
         throw new Error("failed to authenticate user");
       })
       .then(responseJson => {
-        console.log(responseJson)
         if(responseJson.success===false){
           setIsSignedIn(false)
           setIsLoading(false)

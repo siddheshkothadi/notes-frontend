@@ -11,7 +11,6 @@ export default function Note(props){
 
     function insideModalOnClick(e) {
         e.stopPropagation()
-        console.log('clicking inside the modal')
     }
 
     function deleteNote(_id,e){
@@ -82,11 +81,13 @@ export default function Note(props){
                         </div>
                         <textarea rows='1' className='Modal-Title' placeholder='Title' defaultValue={noteTitle} onChange={e => {
                             setModalTitle(e.target.value)
-                            updateNote(props._id,modalTitle,modalDescription)
+                            console.log(modalTitle)
+                            updateNote(props._id,e.target.value,modalDescription)
                         }}/>
                         <textarea rows='8' className='Modal-Description' placeholder='Take a note...' defaultValue={noteDescription} onChange={e => {
                             setModalDescription(e.target.value)
-                            updateNote(props._id,modalTitle,modalDescription)
+                            console.log(e.target.value)
+                            updateNote(props._id,modalTitle,e.target.value)
                         }}/>
                         <div className='Modal-Close' onClick={()=>setIsHidden(true)}>
                             <div className='Modal-Close-Text'>Close</div>
