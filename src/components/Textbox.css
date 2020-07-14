@@ -36,10 +36,19 @@
 .Container > .Submit {
     border-radius: 10px;
     padding: 6px;
-    background-color: #484848;
+    background-color: rgb(163, 120, 9);
     cursor: pointer;
 }
 
+.Container > .Submit-Null {
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #484848;
+    cursor: default;
+}
+
 .Container > .Submit:hover {
-    background-color: darkgoldenrod;
+    font-size: large;
+    background-color: #ffce44;
+    color: #202124;
 }
