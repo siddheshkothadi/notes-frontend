@@ -21,6 +21,7 @@
 .Heading {
     font-size: x-large;
     margin-left: 12px;
+    color: #fff;
 }
 
 .Dropdown {
@@ -39,22 +40,34 @@
     width: auto;
     border-style: solid 1px #484848;
     border-radius: 10px;
-    padding: 10px;
+    padding: 3px;
     box-shadow:  0px 0px 0px #121212, 0 2px 5px 2px #121212;
     margin-right: 5px;
 }
 
-.DropdownContent a{
-    font-size: large;
+.DropdownContent > a{
+    padding: 10px;
+    font-size: medium;
     text-decoration: none;
     color: darkgoldenrod;
+    border-radius: 10px;
+}
+
+.DropdownContent > .Username {
+    padding: 5px;
 }
 
 .Dropdown:hover .DropdownContent{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .Dropdown:hover .UserImage{
     border: solid 2px;
+}
+
+.DropdownContent > a:hover{
+    background-color: #484848;
 }

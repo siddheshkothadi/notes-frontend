@@ -13,29 +13,51 @@
     justify-content: center;
     padding-top: 75px;
 }
-
-.LoadingDashboard img{
+.LoadingDashboard > img{
     width: 50px;
     border-radius: 50%;
 }
 
 .NotSignedInDashboard {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     padding-top: 75px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 100%;
 }
 
-.NotSignedInDashboard a {
-    padding: 20px;
-    border: solid #484848 4px;
-    font-size: x-large;
-    text-decoration: none;
-    color: #e8eaed;
-    border-radius: 30px;
+.Google-Btn {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #212121;
 }
 
-.NotSignedInDashboard a:hover {
-    font-size: xx-large;
+.Google-Btn > .Google-Icon {
+    border-radius: 2px;
+    margin: 11px;
+    width: 24px;
+    height: 24px;
+}
+
+.Google-Btn > .Btn-Text {
+    font-weight: 649;
+    color: #373737;
+    font-size: medium;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.Google-Btn:hover {
+    box-shadow: 0 0 4px #e8eaed;
 }
