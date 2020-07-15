@@ -11,13 +11,19 @@ export default function(props){
                     <a href="http://localhost:5000/auth/logout">Logout</a>
                 </div>
             </div>
-            <div className='Heading'>Notes</div>
+            <div className='Header-Flex'>
+                <img src={process.env.PUBLIC_URL + '/favicon.ico'} alt='Notes-Logo'/>
+                <div className='Heading'>Notes</div>
+            </div>
         </div>
     ) :
     (
         <div className="Header">
             <div className='SignIn-Button' onClick={()=>window.location.href='http://localhost:5000/auth/google'}>Sign In</div>
-            <div className='Heading'>Notes</div>
+            <div className='Header-Flex'>
+                <img src={process.env.PUBLIC_URL + '/favicon.ico'} alt='Notes-Logo'/>
+                <div className='Heading'>Notes</div>
+            </div>
         </div>
     )
 }

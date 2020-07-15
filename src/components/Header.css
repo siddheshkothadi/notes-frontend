@@ -12,17 +12,28 @@
     z-index: 1;
 }
 
+.Header-Flex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Header-Flex > img {
+    margin-left: 12px;
+    width: 30px;
+}
+
+.Header-Flex > .Heading {
+    margin-left: 8px;
+    font-size: x-large;
+    cursor: default;
+}
+
 .UserImage {
     width: 30px;
     margin: 10px;
     border-radius: 50%;
-}
-
-.Heading {
-    font-size: x-large;
-    margin-left: 12px;
-    color: #fff;
-    cursor: default;
 }
 
 .SignIn-Button {
@@ -31,8 +42,6 @@
     margin-right: 12px;
     padding: 8px;
     border-radius: 12px;
-    color: #e8eaed;
-    /* border: 1px solid #484848; */
 }
 
 .Dropdown {

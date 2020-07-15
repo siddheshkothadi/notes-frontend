@@ -42,8 +42,6 @@
 }
 
 .NotSignedInDashboard > .Notes-Head > .Notes-Head-Text {
-    position: relative;
-    /* display: none; */
     font-weight: 500;
     margin-left: 10px;
     margin-right: 5px;
