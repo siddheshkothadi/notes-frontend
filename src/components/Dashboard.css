@@ -30,8 +30,29 @@
     height: 100%;
 }
 
-.NotSignedInDashboard > .Notes-Logo {
-    padding-top: 75px;
+.NotSignedInDashboard > .Notes-Head {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #484848;
+    margin-top: 75px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.NotSignedInDashboard > .Notes-Head > .Notes-Head-Text {
+    position: relative;
+    /* display: none; */
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: xx-large;
+    letter-spacing: 0.1em;
+    animation: 
+      typeh 1.5s steps(40, end);
+    animation-fill-mode: backwards;
+    overflow: hidden;
 }
 
 .Google-Btn {
@@ -68,30 +89,33 @@
     border-right: .15em solid goldenrod; 
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: .15em;
+    letter-spacing: .1em;
 }
 
 .Typewriter div:nth-child(1){
     animation: 
-      type 2s steps(40, end);
+      type 1.5s steps(40, end);
     animation-fill-mode: forwards;
+    animation-delay: 1.5s;
 }
 
 .Typewriter div:nth-child(2){
     animation: 
-      type2 2s steps(40, end),
+      type2 1.5s steps(40, end),
       blink-caret .75s step-end infinite;
-    animation-delay: 2s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
+}
+
+
+
+.Google-Btn:hover {
+    box-shadow: 0 0 4px #e8eaed;
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: goldenrod; }
-}
-
-.Google-Btn:hover {
-    box-shadow: 0 0 4px #e8eaed;
 }
 
 @keyframes type {
@@ -136,5 +160,22 @@
     100% {
       opacity: 1;
       visibility: visible;
+    }
+}
+
+@keyframes typeh {
+    from { 
+        width: 0 
+    } to { 
+        width: 100% 
+    }
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
     }
 }
