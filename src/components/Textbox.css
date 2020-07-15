@@ -36,7 +36,9 @@
 .Container > .Submit {
     border-radius: 10px;
     padding: 6px;
-    background-color: rgb(163, 120, 9);
+    background-color: goldenrod;
+    font-weight: 649;
+    color: #212121;
     cursor: pointer;
 }
 
@@ -48,7 +50,5 @@
 }
 
 .Container > .Submit:hover {
-    font-size: large;
     background-color: #ffce44;
-    color: #202124;
 }
