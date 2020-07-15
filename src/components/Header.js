@@ -16,13 +16,7 @@ export default function(props){
     ) :
     (
         <div className="Header">
-            <div className='Dropdown'>
-            <img className='UserImage' src={process.env.PUBLIC_URL+'/account.png'} alt='User'/>
-                <div className='DropdownContent'>
-                    <div className='Username'>Not Logged In</div>
-                    <a href="http://localhost:5000/auth/google">Login</a>
-                </div>
-            </div>
+            <div className='SignIn-Button' onClick={()=>window.location.href='http://localhost:5000/auth/google'}>Sign In</div>
             <div className='Heading'>Notes</div>
         </div>
     )
