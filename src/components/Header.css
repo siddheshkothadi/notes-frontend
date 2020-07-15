@@ -92,6 +92,6 @@
     background-color: #484848;
 }
 
-.SignIn-Button:hover {
+.SignIn-Button:hover, .SignIn-Button:focus {
     background-color: #484848;
 }
