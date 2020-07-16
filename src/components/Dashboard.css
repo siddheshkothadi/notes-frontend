@@ -40,6 +40,9 @@
     margin-top: 75px;
     padding: 10px;
     border-radius: 20px;
+    animation: 
+      fade-in 1s steps(40, end);
+    animation-fill-mode: forwards;
 }
 
 .NotSignedInDashboard > .Notes-Head > .Notes-Head-Text {
@@ -48,10 +51,6 @@
     margin-right: 5px;
     font-size: xx-large;
     letter-spacing: 0.1em;
-    animation: 
-      typeh 1.5s steps(40, end);
-    animation-fill-mode: backwards;
-    overflow: hidden;
 }
 
 .Google-Btn {
@@ -93,20 +92,18 @@
 
 .Typewriter div:nth-child(1){
     animation: 
-      type 1.5s steps(40, end);
+      type1 1.5s steps(40, end);
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 .Typewriter div:nth-child(2){
     animation: 
       type2 1.5s steps(40, end),
       blink-caret .75s step-end infinite;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
-
-
 
 .Google-Btn:hover {
     box-shadow: 0 0 4px #e8eaed;
@@ -117,7 +114,7 @@
     50% { border-color: goldenrod; }
 }
 
-@keyframes type {
+@keyframes type1 {
     from { 
         width: 0 
     } to { 
@@ -162,19 +159,10 @@
     }
 }
 
-@keyframes typeh {
+@keyframes fade-in {
     from { 
-        width: 0 
+        opacity: 0;
     } to { 
-        width: 100% 
-    }
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
+        opacity: 1;
     }
 }
