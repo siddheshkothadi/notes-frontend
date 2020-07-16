@@ -84,7 +84,7 @@
     font-size: x-large;
     visibility: hidden;
     overflow: hidden;
-    border-right: .15em solid goldenrod; 
+    border-right: .11em solid #ffce44; 
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
@@ -100,7 +100,7 @@
 .Typewriter div:nth-child(2){
     animation: 
       type2 1.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      blink-cursor .75s step-end infinite;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
@@ -109,9 +109,9 @@
     box-shadow: 0 0 4px #e8eaed;
 }
 
-@keyframes blink-caret {
+@keyframes blink-cursor {
     from, to { border-color: transparent }
-    50% { border-color: goldenrod; }
+    50% { border-color: #ffce44; }
 }
 
 @keyframes type1 {
@@ -128,7 +128,7 @@
       opacity: 1;
     }
     99.9% {
-      border-right: .15em solid goldenrod;
+      border-right: .15em solid #ffce44;
     }
     100% {
       opacity: 1;
@@ -151,7 +151,7 @@
       opacity: 1;
     }
     99.9% {
-      border-right: .15em solid goldenrod;
+      border-right: .15em solid #ffce44;
     }
     100% {
       opacity: 1;

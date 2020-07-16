@@ -79,11 +79,11 @@ export default function Note(props){
                                 <div className='Modal-Save-Text'>All changes saved ✓</div>
                             ) }
                         </div>
-                        <textarea rows='1' className='Modal-Title' placeholder='Title' defaultValue={noteTitle} onChange={e => {
+                        <textarea rows='1' className='Modal-Title' spellCheck='false' placeholder='Title' defaultValue={noteTitle} onChange={e => {
                             setModalTitle(e.target.value)
                             updateNote(props._id,e.target.value,modalDescription)
                         }}/>
-                        <textarea rows='8' className='Modal-Description' placeholder='Take a note...' defaultValue={noteDescription} onChange={e => {
+                        <textarea rows='8' className='Modal-Description' spellCheck='false' placeholder='Take a note...' defaultValue={noteDescription} onChange={e => {
                             setModalDescription(e.target.value)
                             updateNote(props._id,modalTitle,e.target.value)
                         }}/>

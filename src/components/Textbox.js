@@ -7,8 +7,8 @@ export default function Textbox(props){
 
     return(
         <div className='Container'>
-            <input className='Title' type='text' placeholder='Title' onChange={e => setTitle(e.target.value)}/>
-            <textarea className='Description' type='text' placeholder='Take a note...' onChange={e => setDescription(e.target.value)}/>
+            <input className='Title' type='text' spellCheck='false' placeholder='Title' onChange={e => setTitle(e.target.value)}/>
+            <textarea className='Description' type='text' spellCheck='false' placeholder='Take a note...' onChange={e => setDescription(e.target.value)}/>
             {title || description ? (
                 <div className='Submit' onClick={()=>{
                     submitNote(props.user.googleId,title,description)

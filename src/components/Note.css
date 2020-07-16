@@ -3,7 +3,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
+    width: 256px;
     height: auto;
     border-style: solid;
     border-width: 1px;
@@ -59,7 +59,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(18,18,18,0.6);
 }
 
 .Modal-Content {
@@ -79,6 +79,7 @@
 }
 
 .Modal-Save-Text {
+    padding: 3px;
     color: grey;
 }
 
@@ -92,7 +93,7 @@
     color: #e8eaed;
     border: none;
     outline: none;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .Modal-Description {
@@ -104,7 +105,7 @@
     color: #e8eaed;
     border: none;
     outline: none;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .Modal-Close {
@@ -113,10 +114,6 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    /* padding: 10px;
-    background-color: #202124;
-    color: #e8eaed;
-    border-radius: 10px; */
 }
 
 .Modal-Close-Text {
@@ -143,6 +140,10 @@
 
 .Modal-Delete:hover {
     background-color: #7f0000;
+}
+
+.Note:hover {
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .Note:hover  .Note-DeleteSection > img{
