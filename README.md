@@ -1,7 +1,7 @@
 ## Notes front end
 
 <p align='center'>
-  <img src='#' />
+  <img src='https://media.giphy.com/media/ekdCA3LtqGNDKfWcoX/giphy.gif' alt=':(' />
 </p>
 
 ### Steps to follow:
