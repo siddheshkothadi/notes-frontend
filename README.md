@@ -1,7 +1,7 @@
 ## Notes front end
 
 <p align='center'>
-  <img src='https://media.giphy.com/media/ekdCA3LtqGNDKfWcoX/giphy.gif' alt=':(' />
+  <img src='https://github.com/siddheshkothadi/notes-frontend/blob/master/preview/Notess%20(2).gif' alt=':(' />
 </p>
 
 ### Steps to follow:
