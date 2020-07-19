@@ -84,7 +84,7 @@
   </li>
 </ul>
 
-## Preview
+## Demonstration
 
 <p align='center'>
   <img src='https://github.com/siddheshkothadi/notes-frontend/blob/preview/preview/Notes.gif' alt='demonstration gif'/>
