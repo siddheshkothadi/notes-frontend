@@ -1,5 +1,5 @@
 import React from "react";
-import './Dashboard.css';
+import './css/Dashboard.css';
 import Notes from  './Notes'
 import Textbox from "./Textbox";
 

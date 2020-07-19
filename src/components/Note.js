@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Note.css'
+import './css/Note.css'
 
 export default function Note(props){
     const [noteTitle, setNoteTitle] = useState(props.title)

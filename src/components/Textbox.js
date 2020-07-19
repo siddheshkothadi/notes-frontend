@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Textbox.css'
+import './css/Textbox.css'
 
 export default function Textbox(props){
     const [title,setTitle] = useState('')

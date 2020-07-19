@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './Notes.css'
+import './css/Notes.css'
 import Note from './Note'
 
 export default function Notes(props){
