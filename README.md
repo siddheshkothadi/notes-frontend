@@ -15,6 +15,14 @@
   <img src='https://github.com/siddheshkothadi/notes-frontend/blob/preview/preview/Notes-Intro.gif' alt=':(' />
 </p>
 
+## Getting started
+
+### Prerequisites
+<ol>
+  <li><a href='https://nodejs.org/en/'>Node.js</a> - a JavaScript runtime</li>
+  <li><a href='https://git-scm.com/downloads'>Git</a> - for cloning and version control</li>
+</ol>
+
 ### Installing
 
 <ul>
