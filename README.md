@@ -23,6 +23,8 @@
 
 ## Getting started
 
+<p>These instructions will get you a copy of the project up and running on your local machine for development.</p>
+
 ### Prerequisites
 <ol>
   <li><a href='https://nodejs.org/en/'>Node.js</a> - a JavaScript runtime</li>
