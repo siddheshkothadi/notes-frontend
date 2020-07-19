@@ -65,11 +65,12 @@
 
 ## Built With
 <ul>
-  <li><b>Front end</b></li>
-  <ul>
-    <li>React</li>
-    <li>React Hooks</li>
-  </ul>
+  <li><b>Front end</b>
+    <ul>
+      <li><a href='https://reactjs.org/'>React</a> : A Javascript library for building beautiful user interfaces</li>
+      <li><a href='https://reactjs.org/docs/hooks-intro.html'>React Hooks</a> : For using state and other react features without writing a class</li>
+    </ul>
+  </li>
   <li><b>Back end</b></li>
   <ul>
     <li>Node.js</li>
