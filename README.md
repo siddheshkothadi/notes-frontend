@@ -16,7 +16,7 @@
 ### The simplest way to keep notes!
 
 <p>Manage your notes. Add, view, edit or delete them easily.</p>
-<p>This repository contains the code for the front end of <b>Notes</b>. Refer the <a href='https://github.com/siddheshkothadi/notes-backend'>express app</a> for back end side (RESTful API using Express and Node).</p>
+<p>This repository contains the code for the <b>front end</b> of Notes. Refer the <a href='https://github.com/siddheshkothadi/notes-backend'>express app</a> for back end side (RESTful API using Express and Node).</p>
 
 <p align='center'>
   <img src='https://github.com/siddheshkothadi/notes-frontend/blob/preview/preview/Notes-Intro.gif' alt=':(' />
@@ -83,6 +83,12 @@
     </ul>
   </li>
 </ul>
+
+## Preview
+
+<p align='center'>
+  <img src='https://github.com/siddheshkothadi/notes-frontend/blob/preview/preview/Notes.gif' alt='demonstration gif'/>
+</p>
 
 ## Component tree
 
