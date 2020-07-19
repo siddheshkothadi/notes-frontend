@@ -2,6 +2,12 @@ import React from "react";
 import './css/Header.css';
 
 export default function(props){
+
+    /*  Header=> (Inside the header)
+        If signed in, show the user image + a dropdown menu with an option to logout
+        Else, show an option to sign in
+    */
+   
     return props.isSignedIn ? (
         <div className="Header">
             <div className='Dropdown'>

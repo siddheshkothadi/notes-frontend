@@ -1,3 +1,4 @@
+/* Sticky header at the top */
 .Header{
     position: fixed;
     display: flex;

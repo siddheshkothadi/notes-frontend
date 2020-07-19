@@ -1,3 +1,4 @@
+/* Main dashboard,which will show the note  */
 .Dashboard {
     display: flex;
     flex-flow: column wrap;
@@ -80,6 +81,7 @@
     padding-right: 11px;
 }
 
+/* For both text-lines  */
 .Typewriter > div {
     font-size: x-large;
     visibility: hidden;
@@ -90,6 +92,7 @@
     letter-spacing: .1em;
 }
 
+/* first line */
 .Typewriter div:nth-child(1){
     animation: 
       type1 1.5s steps(40, end);
@@ -97,6 +100,7 @@
     animation-delay: 1s;
 }
 
+/* second line */
 .Typewriter div:nth-child(2){
     animation: 
       type2 1.5s steps(40, end),
@@ -105,15 +109,21 @@
     animation-fill-mode: forwards;
 }
 
+/* Hover animation for G-Button */
 .Google-Btn:hover {
     box-shadow: 0 0 4px #e8eaed;
 }
 
-@keyframes blink-cursor {
-    from, to { border-color: transparent }
-    50% { border-color: #ffce44; }
+/* fade in animation for Notes Heading */
+@keyframes fade-in {
+    from { 
+        opacity: 0;
+    } to { 
+        opacity: 1;
+    }
 }
 
+/* typing animation for first line */
 @keyframes type1 {
     from { 
         width: 0 
@@ -137,6 +147,7 @@
     }
 }
 
+/* typing animation for second line */
 @keyframes type2 {
     from { 
         width: 0 
@@ -159,10 +170,8 @@
     }
 }
 
-@keyframes fade-in {
-    from { 
-        opacity: 0;
-    } to { 
-        opacity: 1;
-    }
+/* blink animation */
+@keyframes blink-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: #ffce44; }
 }

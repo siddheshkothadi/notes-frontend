@@ -154,6 +154,7 @@
     background-color: #484848;
 }
 
+/* Animation for modal */
 @keyframes show {
     from {
         transform: scale(0);

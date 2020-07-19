@@ -4,18 +4,20 @@ import Notes from  './Notes'
 import Textbox from "./Textbox";
 
 export default function Dashboard(props){
+
+    // When loading, show loading svg
     if (props.isLoading) return (
         <div className='LoadingDashboard'>
             <img src={process.env.PUBLIC_URL+'/loading.svg'} alt='Loading'/>
         </div>
     )
+    // When not signed in, show an option to sign in with google
     else if (props.isSignedIn===false) return (
         <div className='NotSignedInDashboard'>
             <div className='Notes-Head'>
                 <img className='Notes-Logo' src={process.env.PUBLIC_URL + '/favicon.ico'} alt='Icon'/>
                 <div className='Notes-Head-Text'>NOTES</div>
             </div>
-            
             <div className='Typewriter'>
                 <div>The simplest way</div>
                 <div>to keep notes ...</div>
@@ -26,6 +28,7 @@ export default function Dashboard(props){
             </div>
         </div>
     )
+    // If signed in, show the regular dashboard with notes and textbox
     else if(props.isSignedIn) return(   
         <div className="Dashboard">
             <Textbox {...props} />

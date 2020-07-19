@@ -4,8 +4,14 @@ import Header from "./components/Header";
 import './App.css'
 
 function App() {
+
+  // State denoting whether the user has logged in or not (initially set to false)
   const [isSignedIn,setIsSignedIn] = useState(false)
+
+  // 'user' is the object containing the information about the logged in user
   const [user,setUser] = useState({})
+
+  // Loading state
   const [isLoading,setIsLoading] = useState(false)
 
   useEffect(()=>{
@@ -22,8 +28,8 @@ function App() {
         }
       })
       .then(response => {
-        console.log("login request received")
         if (response.success === false) {
+          // response.success is false when user has not signed in
           return false
         }
         else if (response.status === 200) return response.json();
@@ -35,6 +41,7 @@ function App() {
           setIsLoading(false)
         }
         else{
+          // set the user's received info inside the 'user' object
           setUser(responseJson.user)
           setIsSignedIn(true)
           setIsLoading(false)
@@ -50,6 +57,7 @@ function App() {
   []
   )
 
+  // props are the arguments which will be sent to the children components
   const props = {
     user: user,
     isSignedIn: isSignedIn,

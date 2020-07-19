@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import './css/Textbox.css'
 
 export default function Textbox(props){
+
+    // Textbox is the component which is used to add the note
+
+    // State of the text inside the title and description section of the textbox
     const [title,setTitle] = useState('')
     const [description,setDescription] = useState('')
 
+    // To add a note
     function submitNote(googleId,title,description){
         fetch("http://localhost:5000/notes/add",
         {
@@ -22,6 +27,7 @@ export default function Textbox(props){
             })
         })
         .then(()=>{
+            // after adding the note, reload the page to reflect the changes
             window.location.reload()
         })
         .catch(err => {
@@ -37,7 +43,8 @@ export default function Textbox(props){
                 <div className='Submit' onClick={()=>{
                     submitNote(props.user.googleId,title,description)
                 }}>Add Note</div>
-            ) : (
+            ) : // Disable the 'Add Note' button when title and description are empty
+            (
                 <div className='Submit-Null'>Add Note</div>
             )}
         </div>
