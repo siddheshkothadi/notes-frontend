@@ -58,6 +58,7 @@
    npm start
    ```
 
+  <p><b>NOTE:</b> Make sure you are running the <a href='https://github.com/siddheshkothadi/notes-backend'>back end server</a> on localhost:5000 !</p>
   </li>
 </ul>
 
