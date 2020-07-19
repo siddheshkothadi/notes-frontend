@@ -5,6 +5,7 @@
 <img src='https://img.shields.io/badge/dynamic/json?color=%2361DBFB&label=react%20%20&prefix=v&query=dependencies.react&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-frontend%2Fmaster%2Fpackage.json' alt='react-version'/>
 <img src='https://img.shields.io/badge/dynamic/json?color=green&label=npm%20%20&prefix=v&query=dependencies.npm&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-frontend%2Fmaster%2Fpackage.json' alt='npm version'/>
 <img src='https://img.shields.io/badge/dynamic/json?color=%23A9A9A9&label=express%20%20&prefix=v&query=dependencies.express&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-backend%2Fmaster%2Fpackage.json' alt='express version'/>
+<img src='https://img.shields.io/badge/dynamic/json?color=%23841F27&label=mongoose%20%20&prefix=v&query=dependencies.mongoose&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-backend%2Fmaster%2Fpackage.json' alt='mongoose version'/>
 </p>
 
 ### The simplest way to keep notes!
