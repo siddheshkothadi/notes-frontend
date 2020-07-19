@@ -9,10 +9,8 @@
 <img src='https://img.shields.io/badge/dynamic/json?color=%2332CD32&label=passport%20%20&prefix=v&query=dependencies.passport&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-backend%2Fmaster%2Fpackage.json' alt='passport version'/>
 <img src='https://img.shields.io/badge/dynamic/json?color=%23805A46&label=chai-http&prefix=v&query=dependencies%5B%27chai-http%27%5D&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-backend%2Fmaster%2Fpackage.json' alt='chai-http version'/>
 
-<a href='https://twitter.com/siddhesh_kt'><img src='https://img.shields.io/twitter/follow/siddhesh_kt?label=Follow%20siddhesh_kt&style=social' alt='follow'/></a>
 <a href='https://github.com/siddheshkothadi/'><img src='https://img.shields.io/github/followers/siddheshkothadi?label=Follow&style=social' alt='follow'/></a>
-
-
+<a href='https://twitter.com/siddhesh_kt'><img src='https://img.shields.io/twitter/follow/siddhesh_kt?label=Follow%20siddhesh_kt&style=social' alt='follow'/></a>
 </p>
 
 ### The simplest way to keep notes!
