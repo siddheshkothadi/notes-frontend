@@ -2,6 +2,8 @@
 
 ### Manage your notes... add, view, edit or delete them easily. The simplest way to keep notes!
 
+<img src='https://img.shields.io/badge/dynamic/json?color=%2361DBFB&label=react%20%20&prefix=v&query=dependencies.react&suffix=%20%20&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsiddheshkothadi%2Fnotes-frontend%2Fmaster%2Fpackage.json' alt='react-version'/>
+
 <p>This repository contains the code for the front end of <b>Notes</b>. Refer the <a href='https://github.com/siddheshkothadi/notes-backend'>express app</a> for the back end side and making a RESTful API using Express.js and Node.js.
 
 <p align='center'>
