@@ -33,3 +33,16 @@
   </li>
 </ul>
 
+### Component tree:
+
+```
+        App
+        / \
+       /   \
+  Header   Dashboard
+              /\
+             /  \
+       Textbox   Notes
+       (To Add   (Contains 
+        a Note)      Notes)
+```
