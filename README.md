@@ -90,7 +90,7 @@
   <img src='https://github.com/siddheshkothadi/notes-frontend/blob/preview/preview/Notes.gif' alt='demonstration gif'/>
 </p>
 
-## Component tree
+## React component tree
 
 ```
           App
