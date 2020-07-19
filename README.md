@@ -27,6 +27,7 @@
 <p>These instructions will get you a copy of the project up and running on your local machine for development.</p>
 
 ### Prerequisites
+
 <ol>
   <li><a href='https://nodejs.org/en/'>Node.js</a> - a JavaScript runtime</li>
   <li><a href='https://git-scm.com/downloads'>Git</a> - for cloning and version control</li>
@@ -60,6 +61,25 @@
 
   <p><b>NOTE:</b> Make sure you are running the <a href='https://github.com/siddheshkothadi/notes-backend'>back end server</a> on localhost:5000 !</p>
   </li>
+</ul>
+
+## Built With
+<ul>
+  <li><b>Front end</b></li>
+  <ul>
+    <li>React</li>
+    <li>React Hooks</li>
+  </ul>
+  <li><b>Back end</b></li>
+  <ul>
+    <li>Node.js</li>
+    <li>Express</li>
+    <li>MongoDB Atlas</li>
+    <li>Mongoose</li>
+    <li>Passport</li>
+    <li>Mocha, Chai and <a href='https://www.chaijs.com/plugins/chai-http/'>chai-http</a> : For End-to-end testing</li>
+    <li>Cookie Parser : To use cookies</li>
+  </ul>
 </ul>
 
 ### Component tree
