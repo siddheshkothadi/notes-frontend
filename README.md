@@ -1,6 +1,6 @@
 # Notes
 
-[![CI Actions Status](https://github.com/siddheshkothadi/notes-backend/workflows/Node.js%20CI/badge.svg)](https://github.com/siddheshkothadi/notes-backend/actions)
+![Node.js CI](https://github.com/siddheshkothadi/notes-backend/workflows/Node.js%20CI/badge.svg)
 
 <p>
 <img src='https://img.shields.io/badge/node%20%20-v%5E12.18.0-brightgreen' alt='react-version'/>
