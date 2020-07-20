@@ -15,6 +15,8 @@
 <a href='https://twitter.com/siddhesh_kt'><img src='https://img.shields.io/twitter/follow/siddhesh_kt?label=Follow%20siddhesh_kt&style=social' alt='follow'/></a>
 </p>
 
+## Introduction
+
 ### The simplest way to keep notes!
 
 <p>Manage your notes. Add, view, edit or delete them easily.</p>
