@@ -69,19 +69,21 @@
 <ul>
   <li><b>Front end</b>
     <ul>
-      <li><a href='https://reactjs.org/'>React</a> : A Javascript library for building beautiful user interfaces</li>
-      <li><a href='https://reactjs.org/docs/hooks-intro.html'>React Hooks</a> : For using state and other react features without writing a class</li>
+      <li><a href='https://reactjs.org/'>React</a> : A Javascript library for building beautiful user interfaces
+        <ul><li><a href='https://reactjs.org/docs/hooks-intro.html'>React Hooks</a> : For using state and other react features without writing a class</li></ul>
+      </li>
     </ul>
   </li>
   <li><b>Back end</b>
     <ul>
       <li><a href='https://nodejs.org/en/'>Node.js</a> : A Javascript runtime</li>
-      <li><a href='https://expressjs.com/'>Express</a> : Web framework for Node.js</li>
+      <li><a href='https://expressjs.com/'>Express</a> : Web framework for Node.js
+        <ul><li><a href='http://expressjs.com/en/resources/middleware/cookie-parser.html'>Cookie Parser</a> : To use cookies</li></ul>
+      </li>
       <li><a href='https://www.mongodb.com/cloud/atlas'>MongoDB Atlas</a> : Global cloud database service for modern applications</li>
       <li><a href='https://mongoosejs.com/'>Mongoose</a> : Elegant and simple MongoDB object modeling for Node.js</li>
       <li><a href='http://www.passportjs.org/packages/passport-google-oauth2/'>Passport</a> : For authentication using Google OAuth 2.0</li>
       <li><a href='https://mochajs.org/'>Mocha</a> and <a href='https://www.chaijs.com/plugins/chai-http/'>Chai</a> : For end-to-end testing</li>
-      <li><a href='http://expressjs.com/en/resources/middleware/cookie-parser.html'>Cookie Parser</a> : To use cookies</li>
     </ul>
   </li>
 </ul>
