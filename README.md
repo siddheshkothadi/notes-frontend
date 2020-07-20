@@ -110,7 +110,7 @@
 
 ## TODO
 - [ ] Add tests for front end using Jest
-- [ ] Setup CI pipeline
+- [ ] Setup CI
 
 ## License
 <p>This project is licensed under the MIT License - see the <a href='https://github.com/siddheshkothadi/notes-frontend/blob/master/LICENSE.md'>LICENSE.md</a> file for details</p>
