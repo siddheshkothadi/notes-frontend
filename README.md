@@ -116,3 +116,7 @@
 
 ## License
 <p>This project is licensed under the MIT License - see the <a href='https://github.com/siddheshkothadi/notes-frontend/blob/master/LICENSE.md'>LICENSE.md</a> file for details</p>
+
+
+## Contact
+<p>You can contact me directly on <a href='https://twitter.com/siddhesh_kt'>Twitter</a> or via email at siddhesh.kt@gmail.com</p>
