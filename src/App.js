@@ -49,7 +49,6 @@ function App() {
         
       })
       .catch(err => {
-        console.log("error thrown")
         setIsSignedIn(false)
         setIsLoading(false)
         throw(err)
