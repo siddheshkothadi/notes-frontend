@@ -6,15 +6,15 @@ import './App.css'
 function App() {
 
   // State denoting whether the user has logged in or not (initially set to false)
-  const [isSignedIn,setIsSignedIn] = useState(false)
+  const [isSignedIn, setIsSignedIn] = useState(false)
 
   // 'user' is the object containing the information about the logged in user
-  const [user,setUser] = useState({})
+  const [user, setUser] = useState({})
 
   // Loading state
-  const [isLoading,setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(()=>{
+  useEffect(() => {
     setIsLoading(true)
     fetch(process.env.REACT_APP_BACKEND_URL + '/auth/login/success',
       {
@@ -24,7 +24,7 @@ function App() {
           Accept: "application/json",
           "Content-Type": "application/json",
           "Access-Control-Allow-Credentials": true,
-          "Access-Control-Allow-Origin":true
+          "Access-Control-Allow-Origin": true
         }
       })
       .then(response => {
@@ -36,25 +36,25 @@ function App() {
         throw new Error("failed to authenticate user");
       })
       .then(responseJson => {
-        if(responseJson.success===false){
+        if (responseJson.success === false) {
           setIsSignedIn(false)
           setIsLoading(false)
         }
-        else{
+        else {
           // set the user's received info inside the 'user' object
           setUser(responseJson.user)
           setIsSignedIn(true)
           setIsLoading(false)
         }
-        
+
       })
       .catch(err => {
         setIsSignedIn(false)
         setIsLoading(false)
-        throw(err)
+        throw (err)
       });
-  }, 
-  []
+  },
+    []
   )
 
   // props are the arguments which will be sent to the children components
