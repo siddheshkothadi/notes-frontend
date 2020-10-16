@@ -14,7 +14,7 @@ export default function(props){
                 <img className='UserImage' src={props.user.picture} alt='User'/>
                 <div className='DropdownContent'>
                     <div className='Username'>{props.user.name}</div>
-                    <a href="http://localhost:5000/auth/logout">Logout</a>
+                    <a href={process.env.REACT_APP_BACKEND_URL + '/auth/logout'}>Logout</a>
                 </div>
             </div>
             <div className='Header-Flex'>
@@ -25,7 +25,7 @@ export default function(props){
     ) :
     (
         <div className="Header">
-            <div className='SignIn-Button' onClick={()=>window.location.href='http://localhost:5000/auth/google'}>Sign In</div>
+            <div className='SignIn-Button' onClick={()=>window.location.href= process.env.REACT_APP_BACKEND_URL + '/auth/google'}>Sign In</div>
             <div className='Header-Flex'>
                 <img src={process.env.PUBLIC_URL + '/favicon.ico'} alt='Notes-Logo'/>
                 <div className='Heading'>Notes</div>

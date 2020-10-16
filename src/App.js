@@ -16,7 +16,7 @@ function App() {
 
   useEffect(()=>{
     setIsLoading(true)
-    fetch("http://localhost:5000/auth/login/success",
+    fetch(process.env.REACT_APP_BACKEND_URL + '/auth/login/success',
       {
         method: "GET",
         credentials: "include",
@@ -49,6 +49,7 @@ function App() {
         
       })
       .catch(err => {
+        console.log("error thrown")
         setIsSignedIn(false)
         setIsLoading(false)
         throw(err)
